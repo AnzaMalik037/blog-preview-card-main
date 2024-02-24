@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->  
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="style-guide" href="https://fonts.googleapis.com/css2?family=Figtree:wght@500;800&display=swap">
+
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      font-family: 'Figtree', sans-serif;
+      background-color: hsl(47, 88%, 63%);
+      font-size: 16px;
+    }
+    .container {       
+      display: flex;
+      justify-content: center;
+      align-items: center;   
+      height: 530px;
+      width: 350px;
+      position: relative;
+      margin: 0 auto; /* Center the container horizontally */
+      margin-top: 50px;
+    }
+
+
+    .box {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      position: absolute;
+      bottom: 0; right: 0;
+      background: hsl(0, 0%, 7%);
+      padding-left: 12px;
+      padding-top: 7px;
+    }
+
+    .overlay {
+      z-index: 9;
+      margin: 8px;
+      border-radius: 20px;
+      background: hsl(0, 0%, 100%);
+      border-style: solid;
+      padding-left: 12px;
+      padding-top: 12px;
+    }
+
+    h3:hover {
+      color: hsl(47, 88%, 63%);
+      cursor: pointer; 
+    }
+
+    .learningdiv{
+      height:45px;
+      width:85px;
+      padding-left: 10px;
+      padding-top: 1px;
+      margin-top: 17px;
+      margin-bottom: 17px;
+      border-radius:5px;
+      background-color:hsl(47, 88%, 63%);
+    }
+    
+  </style>
+</head>
+<body>
+  <header style="font-size: 11px;">
+    Learning Published 21 Dec 2023 HTML & CSS foundations These languages are the backbone of every website, defining structure, content, and presentation. Greg Hooper
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Anza Malik</a>.
+    </div>
+  </header>
+
+    <div class="container">
+      <div class="box" id="myBox"></div>
+      <div class="box overlay">
+        <img src="assets/images/illustration-article.svg" style="border-radius: 10px">
+        <div class="learningdiv"><p><b>Learning</b></p></div>
+        Published 21 Dec 2023<br> 
+        <h3>HTML and CSS foundations</h3>
+    
+        <p style="color: hsl(0, 0%, 50%);">These Languages are the backbone of every website, defining structure, content, and presentation.</p>
+        <table> 
+          <tr> 
+            <td><img src="assets/images/image-avatar.webp"></td> 
+            <td><b>&nbsp;Greg Hooper</b></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+</body>
+</html>
